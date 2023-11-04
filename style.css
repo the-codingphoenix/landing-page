@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(160deg, rgba(7, 4, 4, 0.728), rgba(217, 66, 66, 0.199)), url(images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo {
+    width: 120px;
+}
+
+button {
+    padding: 8px 13px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #fa2727a0;
+    color:#e6e3e3;
+    text-transform: capitalize;
+    box-shadow: 0 4px 5px 0 rgba(226, 220, 220, 0.645);
+}
+
+button:hover {
+    background-color: #fffcfce8;
+    color: #fa2727;
+    box-shadow: 0 4px 5px 0 rgba(200, 57, 57, 0.645);
+}
+/* css for content */
+.content {
+    margin-top: 3rem;
+}
+
+.card {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #de9c9c;
+    background: rgba(26, 12, 12, 0.718);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(139, 69, 69, 0.36);
+    line-height: 2;
+    text-align: center;
+}
+
+.card-body {
+    padding: 3rem 0;
+}
+
+.card-body h1 {
+    font-size: 2.5rem;
+    font-family: "Merriweather";
+    color: #fff;
+    opacity: .76;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.card-body h1 span {
+    font-size: 2.8rem;
+    font-family: cursive;
+    color: #fa2727;
+    font-weight: 800;
+}
+
+.card-body p {
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-style: italic;
+    padding: 0 0 20px;
+}
+
+.card-body h2 {
+    position: relative;
+    font-size: 1.6rem;
+    color: rgb(248, 88, 88);
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-body .button {
+    text-align: center;
+}
+
+/* responsiveness for mobile */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+    
+    button {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+    
+    /* css for content */
+    .card {
+        width: 30rem;
+    }
+    
+    .card-body {
+        padding: 3rem 2rem;
+    }
+    
+    .card-body h1 {
+        font-size: 2rem;
+    }
+    
+    .card-body h1 span {
+        font-size: 2.4rem;
+    }
+    
+    .card-body p {
+        font-size: 1.1rem;
+    }
+    
+    .card-body h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .logo {
+        width: 90px;
+    }
+    
+    button {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+    
+    /* css for content */
+    .card {
+        width: 40rem;
+    }
+    
+    .card-body {
+        padding: 2rem 1rem;
+    }
+    
+    .card-body h1 {
+        font-size: 1.2rem;
+    }
+    
+    .card-body h1 span {
+        font-size: 1.6rem;
+    }
+    
+    .card-body p {
+        font-size: 1rem;
+    }
+    
+    .card-body h2 {
+        font-size: 1.2rem;
+    }
+}
